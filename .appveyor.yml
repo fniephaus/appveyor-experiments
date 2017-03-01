@@ -8,10 +8,7 @@ environment:
   matrix:
     # Currently, only Squeak and Pharo images are supported on AppVeyor.
     - SMALLTALK: Squeak-trunk
-    - SMALLTALK: Squeak-5.0
-    - SMALLTALK: Pharo-6.0
-    - SMALLTALK: Pharo-5.0
-    # ...
+
 
 platform:
   - x86
@@ -24,4 +21,4 @@ install:
 build: false
 
 test_script:
-  - '%CYG_BASH% -lc "unzip -v"'
+  - '%CYG_BASH% -lc "/usr/bin/unzip -v"'
