@@ -21,4 +21,4 @@ install:
 build: false
 
 test_script:
-  - '%CYG_BASH% -lc "/usr/bin/unzip -v"'
+  - '%CYG_BASH% -lc "which unzip && /usr/bin/unzip -v"'
